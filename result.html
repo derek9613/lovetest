@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測驗結果</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-10 rounded-2xl shadow-2xl max-w-lg w-full text-center border-b-8 border-pink-400">
+        <div class="text-6xl mb-4">🎉</div>
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">測驗完成！</h1>
+        
+        <div class="my-8">
+            <span class="text-gray-500 text-sm uppercase tracking-widest font-bold">最終求生欲得分</span>
+            <div class="text-8xl font-black text-pink-500 mt-2">{{ score }}</div>
+        </div>
+
+        <div class="bg-pink-50 p-6 rounded-2xl mb-8 border border-pink-100">
+            <h2 class="text-xl font-bold text-pink-700 mb-3 underline decoration-pink-300 underline-offset-4">{{ short }}</h2>
+            <p class="text-gray-600 leading-relaxed text-left">{{ long }}</p>
+        </div>
+
+        <a href="/" class="inline-block w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-4 rounded-xl transition shadow-lg">
+            不服氣？再測一次
+        </a>
+    </div>
+</body>
+</html>
