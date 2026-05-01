@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>求生欲測驗中...</title>
+    <title>測驗進行中...</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-pink-50 min-h-screen p-4 md:p-10">
-    <div class="max-w-3xl mx-auto bg-white p-6 md:p-12 rounded-3xl shadow-2xl border-l-8 border-pink-300">
+    <div class="max-w-2xl mx-auto bg-white p-6 md:p-12 rounded-3xl shadow-2xl border-l-8 border-pink-300">
         <header class="mb-10 text-center">
-            <h1 class="text-3xl font-black text-pink-600">💘 戀愛題庫</h1>
-            <p class="text-gray-400 mt-2">請仔細思考每一道題的情境...</p>
+            <h1 class="text-3xl font-black text-pink-600">💖 測驗題目</h1>
+            <p class="text-gray-400 mt-2">請根據真實直覺作答，求生欲拉滿！</p>
         </header>
 
         <form method="POST" class="space-y-12">
@@ -30,14 +30,14 @@
                     {% endfor %}
                 </div>
                 {% elif q.type == 'short_answer' %}
-                <textarea name="{{ qid }}" rows="3" class="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none text-gray-700 shadow-inner bg-white" placeholder="用你的直覺回答..." required></textarea>
+                <textarea name="{{ qid }}" rows="3" class="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none text-gray-700 shadow-inner bg-white" placeholder="請輸入您的回答..." required></textarea>
                 {% endif %}
             </div>
             {% endfor %}
             
             <div class="pt-6">
-                <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-black py-5 rounded-2xl shadow-xl transition duration-300 transform hover:scale-[1.02] text-xl">
-                    送出測驗，查看結果
+                <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-black py-5 rounded-2xl shadow-xl transition transform hover:scale-[1.02] text-xl">
+                    送出測驗，查看成績
                 </button>
             </div>
         </form>
